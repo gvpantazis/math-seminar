@@ -28,3 +28,10 @@ All announced meetings are listed below, in chronological order.
 - URL: {{ talk.url }}
 - Path: {{ talk.path }}
 {% endfor %}
+
+## Temporary diagnostic
+
+{% for talk in site.talks %}
+- Generated URL: `{{ talk.url }}`
+- File: `{{ talk.path }}`
+{% endfor %}
