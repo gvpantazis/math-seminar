@@ -31,8 +31,6 @@ mathematical techniques across related areas.
 **Location:** {{ talk.location }}
 
 {{ talk.abstract }}
-
-[Read more about this talk →]({{ talk.url | relative_url }})
 {% else %}
 No upcoming talks have been announced yet.
 {% endfor %}
