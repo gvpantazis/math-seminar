@@ -35,8 +35,6 @@ Calculus of Variations.
 
 <p>{{ talk.abstract }}</p>
 
-<p><a href="{{ talk.url | relative_url }}">Read more →</a></p>
-
 </div>
 {% else %}
 <p>No upcoming talks have been announced yet.</p>
