@@ -22,16 +22,3 @@ All announced meetings are listed below, in chronological order.
     <p>{{ talk.abstract | default: talk.excerpt | strip_html | truncate: 250 }}</p>
   </div>
 {% endfor %}
-
-{% for talk in site.talks %}
-- Title: {{ talk.title }}
-- URL: {{ talk.url }}
-- Path: {{ talk.path }}
-{% endfor %}
-
-## Temporary diagnostic
-
-{% for talk in site.talks %}
-- Generated URL: `{{ talk.url }}`
-- File: `{{ talk.path }}`
-{% endfor %}
