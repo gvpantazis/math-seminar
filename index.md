@@ -1,8 +1,9 @@
 ---
+
 layout: default
 title: Home
 description: Mathematics research seminar announcements and talks
----
+-----------------------------------------------------------------
 
 <p class="eyebrow">Seminar · Research · Discussion</p>
 
@@ -21,23 +22,6 @@ mathematical techniques across related areas.
 
 ## Upcoming Talks
 
-{% assign all_talks = site.talks | sort: "date" %}
+<p>See the <a href="{{ '/schedule/' | relative_url }}">complete seminar schedule</a> for all announced talks.</p>
 
-{% for talk in all_talks %}
-
-<div class="talk-card">
-  <p class="eyebrow">{{ talk.date | date: "%A, %d %B %Y" }}</p>
-  <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
-  <p class="meta">{{ talk.speaker }} · {{ talk.time }} · {{ talk.location }}</p>
-  <p>{{ talk.abstract }}</p>
-</div>
-{% else %}
-<p>No talks have been announced yet.</p>
-{% endfor %}
-
-<p><a href="{{ '/schedule/' | relative_url }}">View the complete schedule →</a></p>
-
-<p>No upcoming talks are scheduled.</p>
-{% endfor %}
-
-<p><a href="{{ '/schedule/' | relative_url }}">View the complete schedule →</a></p>
+<p><a href="{{ '/bibliography/' | relative_url }}">Browse the bibliography</a></p>
