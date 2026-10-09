@@ -3,6 +3,7 @@ description: "A seminar in analysis, PDEs, and calculus of variations"
 url: "https://gvpantazis.github.io"
 baseurl: "/math-seminar"
 timezone: "Europe/Athens"
+future: true
 
 markdown: kramdown
 permalink: pretty
@@ -10,7 +11,6 @@ permalink: pretty
 collections:
   talks:
     output: true
-    future: true
     permalink: /talks/:name/
 
 defaults:
