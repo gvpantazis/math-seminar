@@ -1,4 +1,3 @@
-Number of talks: {{ site.talks.size }}
 ---
 layout: default
 title: Home
@@ -22,25 +21,26 @@ mathematical techniques across related areas.
 
 ## Upcoming talks
 
-{% assign talks = site.talks | sort: "date" %}
-{% assign found = false %}
 
-{% for talk in talks %}
-  {% assign talk_day = talk.date | date: "%Y-%m-%d" %}
-  {% assign today = site.time | date: "%Y-%m-%d" %}
+## Upcoming Talks
 
-  {% if talk_day >= today %}
-    {% assign found = true %}
-    <div class="talk-card">
-      <p class="eyebrow">{{ talk.date | date: "%A, %d %B %Y" }}</p>
-      <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
-      <p class="meta">
-        {% if talk.speaker %}{{ talk.speaker }}{% endif %}
-        {% if talk.time %} · {{ talk.time }}{% endif %}
-        {% if talk.location %} · {{ talk.location }}{% endif %}
-      </p>
-      <p>{{ talk.abstract | default: talk.excerpt | strip_html | truncate: 250 }}</p>
-    </div>
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= today" | sort: "date" %}
+
+{% for talk in upcoming_talks %}
+<div class="talk-card">
+  <p class="eyebrow">{{ talk.date | date: "%A, %d %B %Y" }}</p>
+  <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
+  <p class="meta">
+    {{ talk.speaker }}
+    {% if talk.time %} · {{ talk.time }}{% endif %}
+    {% if talk.location %} · {{ talk.location }}{% endif %}
+  </p>
+  <p>{{ talk.abstract }}</p>
+</div>
+{% else %}
+<p>No upcoming talks are scheduled.</p>
+{% endfor %}
   {% endif %}
 {% endfor %}
 
