@@ -17,7 +17,8 @@ and faculty working in mathematical analysis and related fields.
 
 The seminar provides a setting for presenting ongoing research,
 studying important results, discussing open problems, and sharing
-mathematical techniques across related areas.
+mathematical techniques across the areas of Applied Analysis, Nonlinear
+Analysis, Partial Differential Equations and Calculus of Variations.
 
 ## Upcoming Talk
 
