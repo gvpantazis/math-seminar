@@ -1,0 +1,20 @@
+title: "Mathematics Research Seminar"
+description: "A seminar in analysis, PDEs, and calculus of variations"
+url: "https://gvpantazis.github.io"
+baseurl: "/math-seminar"
+timezone: "Europe/Athens"
+
+markdown: kramdown
+permalink: pretty
+
+collections:
+  talks:
+    output: true
+    permalink: /talks/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "default"
