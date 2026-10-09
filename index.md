@@ -6,8 +6,7 @@ description: Mathematics research seminar announcements and talks
 # Applied Analysis Seminar
 
 <p class="lead">
-A meeting place for PhD students, postdoctoral researchers,
-and faculty working in mathematical analysis and related fields.
+Department of Mathematics · School of Applied Mathematical and Physical Sciences · National Technical University of Athens
 </p>
 
 ## About the seminar
