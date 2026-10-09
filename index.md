@@ -6,7 +6,9 @@ description: Mathematics research seminar announcements and talks
 # Applied Analysis Seminar
 <p class="lead"><em>Organized by prof. Nikos Yannakakis</em></p>
 <p class="lead">
-Department of Mathematics · School of Applied Mathematical and Physical Sciences · National Technical University of Athens
+  <a href="https://semfe.ntua.gr/en/">
+    Department of Mathematics · School of Applied Mathematical and Physical Sciences · National Technical University of Athens
+  </a>
 </p>
 
 ## About the seminar
