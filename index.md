@@ -3,9 +3,6 @@ layout: default
 title: Home
 description: Mathematics research seminar announcements and talks
 ---
-
-<p class="eyebrow">Seminar · Research · Discussion</p>
-
 # Applied Analysis Seminar
 
 <p class="lead">
