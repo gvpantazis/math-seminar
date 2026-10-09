@@ -19,21 +19,32 @@ The seminar provides a setting for presenting ongoing research,
 studying important results, discussing open problems, and sharing
 mathematical techniques across related areas.
 
-## Upcoming Talks
+## Upcoming Talk
+
 {% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= site.time" | sort: "date" %}
 
 {% for talk in upcoming_talks limit:1 %}
-### [{{ talk.title }}]({{ talk.url | relative_url }})
 
-**Date:** {{ talk.date | date: "%A, %B %-d, %Y" }}  
-**Time:** {{ talk.time }}  
-**Speaker:** {{ talk.speaker }}  
-**Location:** {{ talk.location }}
+<div class="talk-card">
 
-{{ talk.abstract }}
+<p class="eyebrow">UPCOMING SEMINAR</p>
+
+<h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
+
+<p><strong>Date:</strong> {{ talk.date | date: "%A, %B %-d, %Y" }}<br>
+<strong>Time:</strong> {{ talk.time }}<br>
+<strong>Speaker:</strong> {{ talk.speaker }}<br>
+<strong>Location:</strong> {{ talk.location }}</p>
+
+<p>{{ talk.abstract }}</p>
+
+<p><a href="{{ talk.url | relative_url }}">Read more →</a></p>
+
+</div>
 {% else %}
-No upcoming talks have been announced yet.
+<p>No upcoming talks have been announced yet.</p>
 {% endfor %}
+
 <p>See the <a href="{{ '/schedule/' | relative_url }}">complete seminar schedule</a> for all announced talks.</p>
 
 <p><a href="{{ '/bibliography/' | relative_url }}">Browse the bibliography</a></p>
