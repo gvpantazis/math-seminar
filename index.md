@@ -20,10 +20,10 @@ Calculus of Variations.
 
 ## Upcoming Talk
 
-{% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= site.time" | sort: "date" %}
+{% assign today = site.time | date: "%Y-%m-%d" %}
+{% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= today" | sort: "date" %}
 
 {% for talk in upcoming_talks limit:1 %}
-
 <div class="talk-card">
 
 <p class="eyebrow">UPCOMING SEMINAR</p>
