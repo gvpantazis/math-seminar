@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Φ-Functions 2"
+title: "Introduction to Φ-Functions - Part 2"
 date: 2026-10-16
 speaker: "Nikos Yannakakis"
 time: "18:30"
@@ -13,11 +13,4 @@ categories:
 
 ## Abstract
 
-We introduce variational problems with nonstandard growth, focusing on the double-phase energy
-\\(\Phi\\)
-\[
-H(x,t)=t^p+a(x)t^q.
-\]
-
-We discuss the associated function spaces and explain why the regularity of the coefficient \(a(x)\) plays an important role.
-
+To be written.
