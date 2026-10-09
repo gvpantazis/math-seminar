@@ -27,8 +27,6 @@ mathematical techniques across related areas.
 
 <div class="talk-card">
 
-<p class="eyebrow">UPCOMING SEMINAR</p>
-
 <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
 
 <p><strong>Date:</strong> {{ talk.date | date: "%A, %B %-d, %Y" }}<br>
