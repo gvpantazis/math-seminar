@@ -6,7 +6,7 @@ description: Mathematics research seminar announcements and talks
 
 <p class="eyebrow">Seminar · Research · Discussion</p>
 
-# Mathematics Research Seminar
+# Applied Analysis and PDEs
 
 <p class="lead">
 A meeting place for PhD students, postdoctoral researchers,
