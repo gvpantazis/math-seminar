@@ -19,9 +19,6 @@ The seminar provides a setting for presenting ongoing research,
 studying important results, discussing open problems, and sharing
 mathematical techniques across related areas.
 
-## Upcoming talks
-
-
 ## Upcoming Talks
 
 {% assign today = site.time | date: "%Y-%m-%d" %}
@@ -31,19 +28,11 @@ mathematical techniques across related areas.
 <div class="talk-card">
   <p class="eyebrow">{{ talk.date | date: "%A, %d %B %Y" }}</p>
   <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
-  <p class="meta">
-    {{ talk.speaker }}
-    {% if talk.time %} · {{ talk.time }}{% endif %}
-    {% if talk.location %} · {{ talk.location }}{% endif %}
-  </p>
+  <p class="meta">{{ talk.speaker }} · {{ talk.time }} · {{ talk.location }}</p>
   <p>{{ talk.abstract }}</p>
 </div>
 {% else %}
 <p>No upcoming talks are scheduled.</p>
 {% endfor %}
-
-{% unless found %}
-<p>No upcoming talks have been announced yet.</p>
-{% endunless %}
 
 <p><a href="{{ '/schedule/' | relative_url }}">View the complete schedule →</a></p>
