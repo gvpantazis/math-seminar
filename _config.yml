@@ -10,6 +10,7 @@ permalink: pretty
 collections:
   talks:
     output: true
+    future: true
     permalink: /talks/:name/
 
 defaults:
