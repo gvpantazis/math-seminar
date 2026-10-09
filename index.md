@@ -20,67 +20,30 @@ Calculus of Variations.
 
 ## Upcoming Talk
 
-<div id="upcoming-talk"></div>
+{% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= site.time" | sort: "date" %}
 
-<script>
-(function () {
-  const talks = [
-    {% assign sorted_talks = site.talks | sort: "date" %}
-    {% for talk in sorted_talks %}
-    {
-      title: {{ talk.title | jsonify }},
-      date: {{ talk.date | date: "%Y-%m-%d" | jsonify }},
-      time: {{ talk.time | jsonify }},
-      speaker: {{ talk.speaker | jsonify }},
-      location: {{ talk.location | jsonify }},
-      abstract: {{ talk.abstract | jsonify }},
-      url: {{ talk.url | relative_url | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
-    {% endfor %}
-  ];
+{% for talk in upcoming_talks limit:1 %}
 
-  const now = new Date();
+<div class="talk-card">
 
-  // Interpret seminar dates and times in Athens time.
-  const upcoming = talks.filter(talk => {
-    const start = new Date(
-      talk.date + "T" + talk.time + ":00+03:00"
-    );
-    return start >= now;
-  }).sort((a, b) =>
-    (a.date + a.time).localeCompare(b.date + b.time)
-  )[0];
+<p class="eyebrow">UPCOMING SEMINAR</p>
 
-  const container = document.getElementById("upcoming-talk");
+<h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
 
-  if (!upcoming) {
-    container.textContent = "No upcoming talks have been announced yet.";
-    return;
-  }
+<p><strong>Date:</strong> {{ talk.date | date: "%A, %B %-d, %Y" }}<br>
+<strong>Time:</strong> {{ talk.time }}<br>
+<strong>Speaker:</strong> {{ talk.speaker }}<br>
+<strong>Location:</strong> {{ talk.location }}</p>
 
-  const date = new Date(upcoming.date + "T12:00:00");
-  const formattedDate = date.toLocaleDateString("en-GB", {
-    weekday: "long",
-    day: "numeric",
-    month: "long",
-    year: "numeric"
-  });
+<p>{{ talk.abstract }}</p>
 
-  container.innerHTML = `
-    <div class="talk-card">
-      <p class="eyebrow">UPCOMING SEMINAR</p>
-      <h3><a href="${upcoming.url}">${upcoming.title}</a></h3>
-      <p>
-        <strong>Date:</strong> ${formattedDate}<br>
-        <strong>Time:</strong> ${upcoming.time}<br>
-        <strong>Speaker:</strong> ${upcoming.speaker}<br>
-        <strong>Location:</strong> ${upcoming.location}
-      </p>
-      <p>${upcoming.abstract}</p>
-      <p><a href="${upcoming.url}">Read more →</a></p>
-    </div>`;
-})();
-</script>
+<p><a href="{{ talk.url | relative_url }}">Read more →</a></p>
+
+</div>
+{% else %}
+<p>No upcoming talks have been announced yet.</p>
+{% endfor %}
+
 
 <p>See the <a href="{{ '/schedule/' | relative_url }}">complete seminar schedule</a> for all announced talks.</p>
 
