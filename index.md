@@ -33,8 +33,6 @@ mathematical techniques across related areas.
 <strong>Time:</strong> {{ talk.time }}<br>
 <strong>Speaker:</strong> {{ talk.speaker }}<br>
 <strong>Location:</strong> {{ talk.location }}</p>
-
-<p>{{ talk.abstract }}</p>
 </div>
 {% else %}
 <p>No upcoming talks have been announced yet.</p>
