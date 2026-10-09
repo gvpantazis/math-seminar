@@ -1,4 +1,4 @@
-
+Number of talks: {{ site.talks.size }}
 ---
 layout: default
 title: Home
