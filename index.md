@@ -21,10 +21,10 @@ mathematical techniques across related areas.
 
 ## Upcoming Talks
 
-{% assign today = site.time | date: "%Y-%m-%d" %}
-{% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= today" | sort: "date" %}
+{% assign all_talks = site.talks | sort: "date" %}
 
-{% for talk in upcoming_talks %}
+{% for talk in all_talks %}
+
 <div class="talk-card">
   <p class="eyebrow">{{ talk.date | date: "%A, %d %B %Y" }}</p>
   <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
@@ -32,6 +32,11 @@ mathematical techniques across related areas.
   <p>{{ talk.abstract }}</p>
 </div>
 {% else %}
+<p>No talks have been announced yet.</p>
+{% endfor %}
+
+<p><a href="{{ '/schedule/' | relative_url }}">View the complete schedule →</a></p>
+
 <p>No upcoming talks are scheduled.</p>
 {% endfor %}
 
