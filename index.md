@@ -41,8 +41,6 @@ mathematical techniques across related areas.
 {% else %}
 <p>No upcoming talks are scheduled.</p>
 {% endfor %}
-  {% endif %}
-{% endfor %}
 
 {% unless found %}
 <p>No upcoming talks have been announced yet.</p>
