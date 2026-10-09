@@ -1,5 +1,4 @@
 ---
-
 layout: default
 title: Home
 description: Mathematics research seminar announcements and talks
