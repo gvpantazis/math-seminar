@@ -21,9 +21,8 @@ Calculus of Variations.
 ## Upcoming Talk
 
 {% assign today = site.time | date: "%Y-%m-%d" %}
-{% assign upcoming_talks = site.talks | where_exp: "talk", "talk.date >= today" | sort: "date" %}
-
-{% for talk in upcoming_talks limit:1 %}
+{% assign upcoming_talks = site.talks | sort: "date" %}
+{% assign upcoming_talks = upcoming_talks | where_exp: "talk", "talk.date >= site.time or talk.date contains today" %}
 <div class="talk-card">
 
 <p class="eyebrow">UPCOMING SEMINAR</p>
