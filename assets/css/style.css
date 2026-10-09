@@ -109,6 +109,10 @@ a {
 }
 
 .talk-card {
+  max-width: 700px;
+  min-height: 200px;
+  box-sizing: border-box;
+
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
