@@ -35,9 +35,6 @@ mathematical techniques across related areas.
 <strong>Location:</strong> {{ talk.location }}</p>
 
 <p>{{ talk.abstract }}</p>
-
-<p><a href="{{ talk.url | relative_url }}">Read more →</a></p>
-
 </div>
 {% else %}
 <p>No upcoming talks have been announced yet.</p>
