@@ -4,17 +4,17 @@ title: Home
 description: Mathematics research seminar announcements and talks
 ---
 # Applied Analysis Seminar
-
+<p class="lead"><em>Organized by prof. Nikos Yannakakis</em></p>
 <p class="lead">
 Department of Mathematics · School of Applied Mathematical and Physical Sciences · National Technical University of Athens
 </p>
 
 ## About the seminar
 
-This seminar, organized by professor Nikos Yannakakis, provides a setting 
-for presenting ongoing research, studying important results, discussing 
-open problems, and sharing mathematical techniques across the areas of 
-Applied Analysis, Nonlinear Analysis, Partial Differential Equations and 
+This seminar provides a setting for presenting ongoing research, 
+studying important results, discussing open problems, and sharing
+mathematical techniques across the areas of Applied Analysis, 
+Nonlinear Analysis, Partial Differential Equations and 
 Calculus of Variations.
 
 ## Upcoming Talk
