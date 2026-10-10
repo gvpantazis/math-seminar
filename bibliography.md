@@ -8,7 +8,8 @@ permalink: /bibliography/
 References recommended during the seminar.
 
 ## Books
--
+1. Orlicz Spaces and Generalized Orlicz Spaces,  Petteri Harjulehto , Peter Hästö, 2019
+
 ## Papers
 -
 ## References from individual talks

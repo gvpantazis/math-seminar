@@ -12,13 +12,13 @@ All announced meetings are listed below, in chronological order.
 
 {% for talk in talks %}
   <div class="talk-card">
-    <p class="eyebrow">{{ talk.date | date: "%d %B %Y" }}</p>
+    <p class="eyebrow">{{ talk.date | date: "%A, %B %-d, %Y" }}</p>
     <h3><a href="{{ talk.url | relative_url }}">{{ talk.title }}</a></h3>
     <p class="meta">
       {{ talk.speaker | default: "Speaker to be announced" }}
       {% if talk.time %} · {{ talk.time }}{% endif %}
       {% if talk.location %} · {{ talk.location }}{% endif %}
     </p>
-    <p>{{ talk.abstract | default: talk.excerpt | strip_html | truncate: 250 }}</p>
+    <p><strong>Description: </strong>{{ talk.abstract | default: talk.excerpt | strip_html | truncate: 250 }}</p>
   </div>
 {% endfor %}

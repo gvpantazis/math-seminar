@@ -4,12 +4,20 @@ title: Home
 description: Mathematics research seminar announcements and talks
 ---
 # Applied Analysis Seminar
-<p class="lead"><em>Organized by prof. Nikos Yannakakis</em></p>
 <p class="lead">
   <a href="https://semfe.ntua.gr/en/">
     Department of Mathematics · School of Applied Mathematical and Physical Sciences · National Technical University of Athens
   </a>
 </p>
+<p class="lead"><em>Organized by</em><br>
+Nikos Yannakakis, Professor, NTUA</p>
+
+<p class="lead"><em>Co-organized by</em><br>
+Dimosthenis Drivaliaris, Associate Professor, UAegean<br>
+Alexandros Matsoukas, Postdoctoral Researcher, NTUA<br>
+Georgios Pantazis, PhD Student, NTUA<br>
+Konstantinos Smpokos, PhD Student, NTUA</p>
+
 
 ## About the seminar
 
@@ -33,9 +41,10 @@ Calculus of Variations.
 <p><strong>Date:</strong> {{ talk.date | date: "%A, %B %-d, %Y" }}<br>
 <strong>Time:</strong> {{ talk.time }}<br>
 <strong>Speaker:</strong> {{ talk.speaker }}<br>
-<strong>Location:</strong> {{ talk.location }}</p>
+<strong>Location:</strong> {{ talk.location }}<br>
+<strong>Description:</strong> {{ talk.abstract }}</p>
 
-<p>{{ talk.abstract }}</p>
+
 
 </div>
 {% else %}

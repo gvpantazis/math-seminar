@@ -1,11 +1,13 @@
 ---
-title: "Introduction to Φ-Functions - Part 2"
+title: "From Φ-Functions to Generalized Orlicz Spaces"
 date: 2026-10-23
 speaker: "Nikos Yannakakis"
 time: "18:30"
 location: "Conference room, Building E, School of Applied Mathematical and Physical Sciences, NTUA"
-abstract: "An introduction to the definition, fundamental properties, and basic examples of Φ-functions."
+abstract: "Definitions of Generalized Orlicz Spaces given a Φ-Function."
 permalink: /talks/example2/
+references:
+  - Orlicz Spaces and Generalized Orlicz Spaces,  Petteri Harjulehto , Peter Hästö, 2019
 categories:
   - Analysis
   - PDEs
