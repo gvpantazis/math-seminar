@@ -15,8 +15,9 @@ Nikos Yannakakis, Professor, NTUA</p>
 <p class="lead"><em>Co-organized by</em><br>
 Dimosthenis Drivaliaris, Associate Professor, UAegean<br>
 Alexandros Matsoukas, Postdoctoral Researcher, NTUA<br>
+Konstantinos Smpokos, Postdoctoral Researcher, NTUA<br>
 Georgios Pantazis, PhD Student, NTUA<br>
-Konstantinos Smpokos, PhD Student, NTUA</p>
+Dimitrios Bekiaris, PhD Student, NTUA</p>
 
 
 ## About the seminar
