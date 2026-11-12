@@ -11,3 +11,7 @@ categories:
   - Analysis
   - PDEs
 ---
+We prove the existence of a well behaved trace operator on weighted
+Sobolev spaces defined on an open and bounded subset U of R^N with Lipschitz boundary, assuming
+two regularity conditions on the weight function a. We prove also that this operator is almost
+unique.
